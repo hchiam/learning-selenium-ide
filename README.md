@@ -18,14 +18,16 @@ API for the chrome extension: <https://www.selenium.dev/selenium-ide/docs/en/api
 
 - <https://stackoverflow.com/questions/50593047/how-do-i-find-match-a-string-in-selenium-ide>
 - `execute script`, `return 'value'`, `varName`
-  - execute script to set var val
+  - you can use execute script to set a variable with a value, which other steps can use
+- you can: `open`, `https://www/.../${varName}/subpath/`
+  - you can use a variable in the middle of a URL path to more dynamically navigate to URLs
 - `assert element present`, `xpath=//pre[contains(text(),varName)]`
-  - can use var in xpath contains, but not regex
-  - since can't use regex, just use assert element present and contains each non-changing part
+  - you can use such a variable in xpath `contains`, NOTE: you cannot use regex in xpaths/selectors in Selenium IDE
+  - you can get around this limitation by using `assert element present` and then use `contains` to check each non-changing part ("before", "after", "middle")
 - `echo`, `${varName}`
   - echo works like console.log
 - `assert`, `varName`, `true`
-  - assert to assert var val directly
-- you can: `open`, `https://www/.../${varVal}/subpath/`
-- `if (${labelText}.match(/someRegex/)) { return true; } else { return false };`
-  ![example store text, to string, to boolean](example_storeText_string_boolean.png)
+  - you can even use `assert` to assert a variable value directly
+- `execute script`, `if (${labelText}.match(/someRegex/)) { return true; } else { return false };`, `isMatch`
+  - or, for example: 
+  ![store text, jsonText, execute script, return typeof JSON.stringify(${jsonText.toString()}) == 'string', isMatch, assert isMatch true](example_storeText_string_boolean.png)

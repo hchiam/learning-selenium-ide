@@ -22,3 +22,5 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
   - works like console.log
 - assert, varName, true
   - assert to assert var val directly
+- you can: open, .../${varVal}/...
+

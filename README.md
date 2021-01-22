@@ -24,3 +24,4 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
   - assert to assert var val directly
 - you can: open, .../${varVal}/...
 - if (${labelText}.match(/someRegex/)) { return true; } else { return false };
+  ![example store text, to string, to boolean](example_storeText_string_boolean.png)

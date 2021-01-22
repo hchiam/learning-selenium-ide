@@ -6,6 +6,8 @@ Chrome extension: <https://chrome.google.com/webstore/detail/selenium-ide/mooikf
 
 API for the chrome extension: <https://www.selenium.dev/selenium-ide/docs/en/api/commands>
 
+## My own explorations of using Selenium IDE
+
 - <https://github.com/hchiam/selenium-travis>
 - <https://github.com/hchiam/learning-azure-devops-selenium-webdriver>
 - <https://github.com/hchiam/autologinbot>

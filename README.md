@@ -31,3 +31,7 @@ API for the chrome extension: <https://www.selenium.dev/selenium-ide/docs/en/api
 - `execute script`, `if (${labelText}.match(/someRegex/)) { return true; } else { return false };`, `isMatch`
   - or, for example: 
   ![store text, jsonText, execute script, return typeof JSON.stringify(${jsonText.toString()}) == 'string', isMatch, assert isMatch true](example_storeText_string_boolean.png)
+
+## Also see Katalon Recorder
+
+<https://github.com/hchiam/learning-katalon>
